@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>form-validator</title>
+</head>
+<body>
+
+    <!-- form container -->
+    <div class="form-container">
+        <h2>First time?</h2>
+        <h3>Sign Up with us!</h3>
+        <form id="form">
+            <!-- Email -->
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+            <!-- Username -->
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Username" required
+                minlength="3" maxlength="20">
+            </div>
+            <!-- Password -->
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Password" required
+                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$">
+            </div>
+            <!-- Password Confirm -->
+            <div class="form-group">
+                <label for="password-confirm">Confirm Password:</label>
+                <input type="password" id="password-confirm" name="password-confirm" placeholder="Password Confirm" required
+                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$">
+            </div>
+            <button type="submit">Register</button>
+        </form>
+
+        <div class="form-message" id="form-message">
+            <h4 id="message"> Welcome </h4>
+        </div>
+    </div>
+    
+    <!-- script -->
+    <script src="app.js"></script>
+</body>
+</html>

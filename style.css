@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box; 
+}
+
+body {
+    margin: 0; 
+    padding: 0; 
+    background: url('space-bg.jpeg');
+    background-size: cover;
+    min-height: 100vh;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    font-family: 'Rubik', sans-serif;
+}
+
+h2, h3, h4 {
+    letter-spacing: 5px; 
+    color: white; 
+}
+
+
+.form-container{
+    background-color: black; 
+    width: 320px; 
+    padding: 10px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;  
+    border-radius: 10px; 
+    box-shadow: 0 40px 80px 10px black;
+}
+
+form { 
+    margin-top: 10px; 
+    width: 90%;
+    margin-bottom: 20px; 
+}
+input { 
+    border-radius: 4px; 
+    width: 100%; 
+    padding: 4px;
+    margin-top: 8px;  
+    background-color: black; 
+    color: white; 
+}
+
+.form-group { 
+    color: white; 
+    margin-bottom: 15px; 
+}
+
+button {
+    font-family: 'Rubik', sans-serif; 
+    color: white; 
+    background-color: darkgray; 
+    margin-top: 10px; 
+    margin-bottom: 10px; 
+    width: 100%; 
+    padding: 8px;
+    font-size: 26px;  
+}
+
+button:hover {
+    border-radius: 2px;
+    background: black;
+    border: 2px solid white; 
+}
+
+
+.form-message {
+    font-size: 24px; 
+    padding: 2px; 
+    text-align: center; 
+    width: 90%; 
+    border: 2px solid white; 
+    border-radius: 10px; 
+}
